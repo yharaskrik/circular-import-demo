@@ -1,0 +1,42 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@circular-import-demo/lib1": [
+        "libs/lib1/src/index.ts"
+      ],
+      "@circular-import-demo/lib2": [
+        "libs/lib2/src/index.ts"
+      ],
+      "@circular-import-demo/lib3": [
+        "libs/lib3/src/index.ts"
+      ],
+      "@circular-import-demo/lib4": [
+        "libs/lib4/src/index.ts"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}

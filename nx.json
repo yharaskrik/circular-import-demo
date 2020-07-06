@@ -1,0 +1,39 @@
+{
+  "npmScope": "circular-import-demo",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "demo-e2e": {
+      "tags": []
+    },
+    "demo": {
+      "tags": []
+    },
+    "lib1": {
+      "tags": []
+    },
+    "lib2": {
+      "tags": []
+    },
+    "lib3": {
+      "tags": []
+    },
+    "lib4": {
+      "tags": []
+    },
+    "demo2": {
+      "tags": []
+    },
+    "demo2-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "demo2"
+      ]
+    }
+  }
+}
